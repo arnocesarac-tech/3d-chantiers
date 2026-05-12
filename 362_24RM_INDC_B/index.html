@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>3D chantier - 362_24RM_INDC_B</title>
+  <style>
+    body { margin: 0; overflow: hidden; font-family: Arial, sans-serif; background: #eef1f3; }
+    #viewer { width: 100vw; height: 100vh; display: block; }
+    .label {
+      position: fixed; left: 10px; top: 10px; z-index: 2;
+      background: rgba(255,255,255,.92); border: 1px solid #d7dde2;
+      border-radius: 6px; padding: 8px 10px; font-size: 13px;
+    }
+    .status {
+      position: fixed; left: 10px; bottom: 10px; z-index: 2;
+      background: rgba(255,255,255,.92); border: 1px solid #d7dde2;
+      border-radius: 6px; padding: 8px 10px; font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <div class="label">3D chantier - 362_24RM_INDC_B</div>
+  <div id="viewer"></div>
+  <div class="status" id="status">Chargement 3D...</div>
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.164.1/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.164.1/examples/jsm/"
+      }
+    }
+  </script>
+  <script type="module">
+    import * as THREE from 'three';
+    import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+    import { VRMLLoader } from 'three/addons/loaders/VRMLLoader.js';
+
+    const container = document.getElementById('viewer');
+    const status = document.getElementById('status');
+    const scene = new THREE.Scene();
+    scene.background = new THREE.Color(0xeef1f3);
+
+    const camera = new THREE.PerspectiveCamera(45, innerWidth / innerHeight, 0.1, 100000);
+    const renderer = new THREE.WebGLRenderer({ antialias: true });
+    renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+    renderer.setSize(innerWidth, innerHeight);
+    container.appendChild(renderer.domElement);
+
+    const controls = new OrbitControls(camera, renderer.domElement);
+    controls.enableDamping = true;
+    controls.enablePan = true;
+
+    scene.add(new THREE.HemisphereLight(0xffffff, 0x777777, 2.2));
+    const light = new THREE.DirectionalLight(0xffffff, 2.0);
+    light.position.set(200, 300, 150);
+    scene.add(light);
+
+    function fitObject(object) {
+      const box = new THREE.Box3().setFromObject(object);
+      const size = box.getSize(new THREE.Vector3());
+      const center = box.getCenter(new THREE.Vector3());
+      const maxDim = Math.max(size.x, size.y, size.z) || 1;
+      const distance = maxDim * 1.8;
+      object.position.sub(center);
+      camera.position.set(distance, distance * 0.7, distance);
+      camera.near = Math.max(distance / 1000, 0.1);
+      camera.far = distance * 100;
+      camera.updateProjectionMatrix();
+      controls.target.set(0, 0, 0);
+      controls.update();
+    }
+
+    const loader = new VRMLLoader();
+    loader.load('modele.wrl', (object) => {
+      scene.add(object);
+      fitObject(object);
+      status.style.display = 'none';
+    }, undefined, (error) => {
+      status.textContent = 'Erreur chargement 3D';
+      console.error(error);
+    });
+
+    addEventListener('resize', () => {
+      camera.aspect = innerWidth / innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(innerWidth, innerHeight);
+    });
+
+    function animate() {
+      requestAnimationFrame(animate);
+      controls.update();
+      renderer.render(scene, camera);
+    }
+    animate();
+  </script>
+</body>
+</html>
