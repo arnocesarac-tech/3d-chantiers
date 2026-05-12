@@ -1,0 +1,7 @@
+Chantier : 362-24RM
+Modele : pupitre_.wrl
+Page chantier : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\05_CHANTIERS_PREPARES\362-24RM\index.html
+GLB local : non genere
+Lien 3D : http://localhost:8765/
+QR code SVG : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_362-24RM_20260512_1357.svg
+QR code PDF : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_362-24RM_20260512_1357.pdf
