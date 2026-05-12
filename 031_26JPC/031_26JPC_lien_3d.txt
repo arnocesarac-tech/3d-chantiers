@@ -1,0 +1,7 @@
+Chantier : 031_26JPC
+Modele : ☺IMPLANTATION.wrl
+Page chantier : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\05_CHANTIERS_PREPARES\031_26JPC\index.html
+GLB local : non genere
+Lien 3D : https://arnocesarac-tech.github.io/3d-chantiers/031_26JPC/
+QR code SVG : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_031_26JPC_20260512_1520.svg
+QR code PDF : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_031_26JPC_20260512_1520.pdf
