@@ -1,0 +1,7 @@
+Chantier : 362_24RM_INDC_C
+Modele : pupitre_TEST_2.wrl
+Page chantier : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\05_CHANTIERS_PREPARES\362_24RM_INDC_C\index.html
+GLB local : non genere
+Lien 3D : https://arnocesarac-tech.github.io/3d-chantiers/362_24RM_INDC_C/
+QR code SVG : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_362_24RM_INDC_C_20260512_1448.svg
+QR code PDF : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_362_24RM_INDC_C_20260512_1448.pdf
