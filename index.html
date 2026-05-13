@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>3D chantier - Vitrine_eclater</title>
+  <style>
+    body { margin: 0; overflow: hidden; font-family: Arial, sans-serif; background: #4f5961; color: #17202a; }
+    #viewer { width: 100vw; height: 100vh; display: block; }
+    .label {
+      position: fixed; left: 10px; top: 10px; z-index: 2;
+      background: rgba(243,245,246,.94); border: 1px solid #cbd2d7;
+      border-radius: 6px; padding: 8px 10px; font-size: 13px;
+    }
+    .tools {
+      position: fixed; right: 10px; top: 10px; z-index: 3;
+      display: flex; gap: 6px; flex-wrap: wrap; justify-content: flex-end;
+      max-width: min(520px, calc(100vw - 20px));
+    }
+    button {
+      border: 1px solid #aeb7be; background: rgba(243,245,246,.95);
+      color: #17202a; border-radius: 6px; padding: 8px 10px;
+      font-size: 13px; cursor: pointer;
+    }
+    button:active { transform: translateY(1px); }
+    .status {
+      position: fixed; left: 10px; bottom: 10px; z-index: 2;
+      background: rgba(243,245,246,.94); border: 1px solid #cbd2d7;
+      border-radius: 6px; padding: 8px 10px; font-size: 13px; max-width: 360px;
+    }
+    .help {
+      position: fixed; left: 10px; bottom: 10px; z-index: 2;
+      background: rgba(243,245,246,.94); border: 1px solid #cbd2d7;
+      border-radius: 6px; padding: 8px 10px; font-size: 13px;
+      line-height: 1.35; max-width: 360px;
+    }
+    @media (max-width: 700px) {
+      .label { top: auto; bottom: 10px; max-width: calc(100vw - 20px); }
+      .tools { left: 10px; right: 10px; top: 10px; justify-content: flex-start; }
+      .help { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="label">3D chantier - Vitrine_eclater</div>
+  <div class="tools">
+    <button id="resetView">Recentrer</button>
+    <button id="frontView">Face</button>
+    <button id="sideView">Cote</button>
+    <button id="topView">Dessus</button>
+    <button id="edgesView">Aretes</button>
+  </div>
+  <div id="viewer"></div>
+  <div class="status" id="status">Chargement 3D...</div>
+  <div class="help" id="help">1 doigt : rotation<br>2 doigts : deplacer / zoomer<br>Molette : zoom</div>
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.164.1/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.164.1/examples/jsm/"
+      }
+    }
+  </script>
+  <script type="module">
+    import * as THREE from 'three';
+    import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+    import { VRMLLoader } from 'three/addons/loaders/VRMLLoader.js';
+
+    const container = document.getElementById('viewer');
+    const status = document.getElementById('status');
+    const help = document.getElementById('help');
+    const scene = new THREE.Scene();
+    scene.background = new THREE.Color(0x5b666f);
+
+    const camera = new THREE.PerspectiveCamera(45, innerWidth / innerHeight, 0.1, 100000);
+    const renderer = new THREE.WebGLRenderer({ antialias: true });
+    renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+    renderer.setSize(innerWidth, innerHeight);
+    container.appendChild(renderer.domElement);
+
+    const controls = new OrbitControls(camera, renderer.domElement);
+    controls.enableDamping = true;
+    controls.enablePan = true;
+
+    scene.add(new THREE.HemisphereLight(0xffffff, 0x5b6470, 2.0));
+    const light = new THREE.DirectionalLight(0xffffff, 2.4);
+    light.position.set(200, 300, 150);
+    scene.add(light);
+    const fillLight = new THREE.DirectionalLight(0xffffff, 0.65);
+    fillLight.position.set(-180, 120, -220);
+    scene.add(fillLight);
+
+    let currentObject = null;
+    let modelBox = null;
+    let modelSize = null;
+    let modelDistance = 100;
+    let edgesGroup = null;
+    let edgesVisible = false;
+
+    function fitObject(object) {
+      const box = new THREE.Box3().setFromObject(object);
+      const size = box.getSize(new THREE.Vector3());
+      const center = box.getCenter(new THREE.Vector3());
+      const maxDim = Math.max(size.x, size.y, size.z) || 1;
+      const distance = maxDim * 1.8;
+      object.position.sub(center);
+      modelBox = new THREE.Box3().setFromObject(object);
+      modelSize = modelBox.getSize(new THREE.Vector3());
+      modelDistance = distance;
+      setView(distance, distance * 0.7, distance);
+    }
+
+    function setView(x, y, z) {
+      camera.position.set(x, y, z);
+      camera.near = Math.max(modelDistance / 1000, 0.1);
+      camera.far = modelDistance * 100;
+      camera.updateProjectionMatrix();
+      controls.target.set(0, 0, 0);
+      controls.update();
+    }
+
+    function createEdges(object) {
+      if (edgesGroup) scene.remove(edgesGroup);
+      edgesGroup = new THREE.Group();
+      const material = new THREE.LineBasicMaterial({ color: 0x1e252b, transparent: true, opacity: 0.35 });
+      object.traverse((child) => {
+        if (!child.isMesh || !child.geometry) return;
+        const edges = new THREE.EdgesGeometry(child.geometry, 30);
+        const lines = new THREE.LineSegments(edges, material);
+        child.updateWorldMatrix(true, false);
+        lines.applyMatrix4(child.matrixWorld);
+        edgesGroup.add(lines);
+      });
+      edgesGroup.visible = edgesVisible;
+      scene.add(edgesGroup);
+    }
+
+    function showEdges(show) {
+      edgesVisible = show;
+      if (edgesGroup) edgesGroup.visible = edgesVisible;
+      document.getElementById('edgesView').textContent = edgesVisible ? 'Sans aretes' : 'Aretes';
+    }
+
+    document.getElementById('resetView').addEventListener('click', () => setView(modelDistance, modelDistance * 0.7, modelDistance));
+    document.getElementById('frontView').addEventListener('click', () => setView(0, modelDistance * 0.15, modelDistance));
+    document.getElementById('sideView').addEventListener('click', () => setView(modelDistance, modelDistance * 0.15, 0));
+    document.getElementById('topView').addEventListener('click', () => setView(0, modelDistance, 0.01));
+    document.getElementById('edgesView').addEventListener('click', () => showEdges(!edgesVisible));
+
+    const loader = new VRMLLoader();
+    loader.load('modele.wrl', (object) => {
+      currentObject = object;
+      scene.add(object);
+      fitObject(object);
+      createEdges(object);
+      status.style.display = 'none';
+      setTimeout(() => { help.style.display = 'none'; }, 7000);
+    }, undefined, (error) => {
+      status.textContent = 'Erreur chargement 3D';
+      console.error(error);
+    });
+
+    addEventListener('resize', () => {
+      camera.aspect = innerWidth / innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(innerWidth, innerHeight);
+    });
+
+    function animate() {
+      requestAnimationFrame(animate);
+      controls.update();
+      renderer.render(scene, camera);
+    }
+    animate();
+  </script>
+</body>
+</html>
