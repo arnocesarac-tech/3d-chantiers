@@ -1,0 +1,7 @@
+Chantier : 196-25
+Modele : KIT01_QR_CODE.wrl
+Page chantier : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\05_CHANTIERS_PREPARES\196-25\index.html
+GLB local : non genere
+Lien 3D : https://arnocesarac-tech.github.io/3d-chantiers/196-25/
+QR code SVG : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_196-25_20260518_0920.svg
+QR code PDF : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_196-25_20260518_0920.pdf
