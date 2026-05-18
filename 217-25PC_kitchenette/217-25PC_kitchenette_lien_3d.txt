@@ -1,0 +1,7 @@
+Chantier : 217-25PC_kitchenette
+Modele : KITCHENETTE.wrl
+Page chantier : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\05_CHANTIERS_PREPARES\217-25PC_kitchenette\index.html
+GLB local : non genere
+Lien 3D : https://arnocesarac-tech.github.io/3d-chantiers/217-25PC_kitchenette/
+QR code SVG : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_217-25PC_kitchenette_20260518_1711.svg
+QR code PDF : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_217-25PC_kitchenette_20260518_1711.pdf
