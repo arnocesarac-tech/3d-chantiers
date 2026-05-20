@@ -1,0 +1,7 @@
+Chantier : 165-25PC_M1
+Modele : M1_Chambre_01.wrl
+Page chantier : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\05_CHANTIERS_PREPARES\165-25PC_M1\index.html
+GLB local : non genere
+Lien 3D : https://arnocesarac-tech.github.io/3d-chantiers/165-25PC_M1/
+QR code SVG : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_165-25PC_M1_20260520_1730.svg
+QR code PDF : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_165-25PC_M1_20260520_1730.pdf
