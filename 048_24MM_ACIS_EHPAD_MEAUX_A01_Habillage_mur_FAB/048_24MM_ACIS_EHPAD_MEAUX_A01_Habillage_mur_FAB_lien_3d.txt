@@ -1,0 +1,9 @@
+Chantier : 048_24MM_ACIS_EHPAD_MEAUX_A01_Habillage_mur_FAB
+Modele : Habillage.wrl
+Modele source : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\01_EXPORT_TOPSOLID_ICI\048_24MM_ACIS_EHPAD_MEAUX_A01_Habillage_mur_FAB\Habillage.wrl
+Taille modele : 360.2 Ko
+Page chantier : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\05_CHANTIERS_PREPARES\048_24MM_ACIS_EHPAD_MEAUX_A01_Habillage_mur_FAB\index.html
+GLB local : non genere
+Lien 3D : https://arnocesarac-tech.github.io/3d-chantiers/048_24MM_ACIS_EHPAD_MEAUX_A01_Habillage_mur_FAB/
+QR code SVG : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_048_24MM_ACIS_EHPAD_MEAUX_A01_Habillage_mur_FAB_20260629_0811.svg
+QR code PDF : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_048_24MM_ACIS_EHPAD_MEAUX_A01_Habillage_mur_FAB_20260629_0811.pdf

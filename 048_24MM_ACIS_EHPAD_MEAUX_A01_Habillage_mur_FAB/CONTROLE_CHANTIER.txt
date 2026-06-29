@@ -1,0 +1,32 @@
+CONTROLE CHANTIER 3D
+====================
+
+Chantier : 048_24MM_ACIS_EHPAD_MEAUX_A01_Habillage_mur_FAB
+Date preparation : 29/06/2026 08:11
+Fichier 3D source : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\01_EXPORT_TOPSOLID_ICI\048_24MM_ACIS_EHPAD_MEAUX_A01_Habillage_mur_FAB\Habillage.wrl
+Taille source : 360.2 Ko
+Lien QR : https://arnocesarac-tech.github.io/3d-chantiers/048_24MM_ACIS_EHPAD_MEAUX_A01_Habillage_mur_FAB/
+Page 3D : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\05_CHANTIERS_PREPARES\048_24MM_ACIS_EHPAD_MEAUX_A01_Habillage_mur_FAB\index.html
+GLB : non genere
+QR SVG : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_048_24MM_ACIS_EHPAD_MEAUX_A01_Habillage_mur_FAB_20260629_0811.svg
+QR PDF : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_048_24MM_ACIS_EHPAD_MEAUX_A01_Habillage_mur_FAB_20260629_0811.pdf
+
+Fichiers a uploader sur GitHub :
+- 048_24MM_ACIS_EHPAD_MEAUX_A01_Habillage_mur_FAB_lien_3d.txt : 862 o
+- index.html : 16.2 Ko
+- MDF.jpg : 93.7 Ko
+- MELA_H3450_ST22.jpg : 179.3 Ko
+- modele.wrl : 360.2 Ko
+
+Textures referencees par le WRL et copiees :
+- MDF.jpg : 93.7 Ko
+- MELA_H3450_ST22.jpg : 179.3 Ko
+
+Textures referencees mais introuvables :
+- aucune
+
+Fichiers donnees detectes dans le dossier export :
+- aucun CSV/TXT/XML/XLS/XLSX detecte
+
+Conclusion :
+- Preparation OK pour upload manuel GitHub.
