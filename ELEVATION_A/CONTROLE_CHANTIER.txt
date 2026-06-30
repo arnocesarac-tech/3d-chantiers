@@ -1,0 +1,46 @@
+CONTROLE CHANTIER 3D
+====================
+
+Chantier : ELEVATION_A
+Date preparation : 30/06/2026 14:13
+Fichier 3D source : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\01_EXPORT_TOPSOLID_ICI\elevation_a\ELEVATION_A.wrl
+Taille source : 7.9 Mo
+Lien QR : https://arnocesarac-tech.github.io/3d-chantiers/ELEVATION_A/
+Page 3D : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\05_CHANTIERS_PREPARES\ELEVATION_A\index.html
+GLB : non genere
+QR SVG : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_ELEVATION_A_20260630_1413.svg
+QR PDF : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_ELEVATION_A_20260630_1413.pdf
+
+Fichiers a uploader sur GitHub :
+- brushed.jpg : 19.3 Ko
+- ELEVATION_A_lien_3d.txt : 648 o
+- fibreb.jpg : 29.3 Ko
+- H1298.jpg : 175.5 Ko
+- H3470.jpg : 189.4 Ko
+- index.html : 16.5 Ko
+- MELA_U963_ST9.jpg : 16.6 Ko
+- modele.wrl : 7.9 Mo
+- oak_col.jpg : 4.0 Ko
+- Panneau-epicea.jpg : 213.3 Ko
+- RAL_7016.jpg : 4.6 Ko
+- wood4_col.jpg : 8.9 Ko
+
+Textures referencees par le WRL et copiees :
+- H1298.jpg : 175.5 Ko
+- H3470.jpg : 189.4 Ko
+- MELA_U963_ST9.jpg : 16.6 Ko
+- Panneau-epicea.jpg : 213.3 Ko
+- RAL_7016.jpg : 4.6 Ko
+- brushed.jpg : 19.3 Ko
+- fibreb.jpg : 29.3 Ko
+- oak_col.jpg : 4.0 Ko
+- wood4_col.jpg : 8.9 Ko
+
+Textures referencees mais introuvables :
+- aucune
+
+Fichiers donnees detectes dans le dossier export :
+- aucun CSV/TXT/XML/XLS/XLSX detecte
+
+Conclusion :
+- Preparation OK pour upload manuel GitHub.
