@@ -1,0 +1,42 @@
+CONTROLE CHANTIER 3D
+====================
+
+Chantier : IMPLENTATION
+Date preparation : 07/07/2026 13:57
+Fichier 3D source : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\01_EXPORT_TOPSOLID_ICI\257_26PC_PART_CESAR_SDB_A01_Projet_SDB\IMPLENTATION.wrl
+Taille source : 21.0 Mo
+Lien QR : https://arnocesarac-tech.github.io/3d-chantiers/IMPLENTATION/
+Page 3D : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\05_CHANTIERS_PREPARES\IMPLENTATION\index.html
+GLB : non genere
+QR SVG : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_IMPLENTATION_20260707_1357.svg
+QR PDF : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_IMPLENTATION_20260707_1357.pdf
+
+Fichiers a uploader sur GitHub :
+- beech.jpg : 5.2 Ko
+- couleur_blanc.jpg : 1.6 Ko
+- H1582.jpg : 124.9 Ko
+- IMPLENTATION_lien_3d.txt : 683 o
+- index.html : 16.4 Ko
+- MELA_H1145_ST10.jpg : 295.4 Ko
+- MELA_U963_ST9.jpg : 16.6 Ko
+- modele.wrl : 21.0 Mo
+- S201_nougat_cream.jpg : 2.2 Ko
+- U617.jpg : 16.6 Ko
+
+Textures referencees par le WRL et copiees :
+- H1582.jpg : 124.9 Ko
+- MELA_H1145_ST10.jpg : 295.4 Ko
+- MELA_U963_ST9.jpg : 16.6 Ko
+- S201_nougat_cream.jpg : 2.2 Ko
+- U617.jpg : 16.6 Ko
+- beech.jpg : 5.2 Ko
+- couleur_blanc.jpg : 1.6 Ko
+
+Textures referencees mais introuvables :
+- aucune
+
+Fichiers donnees detectes dans le dossier export :
+- aucun CSV/TXT/XML/XLS/XLSX detecte
+
+Conclusion :
+- Preparation OK pour upload manuel GitHub.
