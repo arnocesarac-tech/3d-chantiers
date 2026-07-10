@@ -1,0 +1,40 @@
+CONTROLE CHANTIER 3D
+====================
+
+Chantier : 141_26PS
+Date preparation : 10/07/2026 10:42
+Fichier 3D source : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\01_EXPORT_TOPSOLID_ICI\141_26PS_SPIE _USINE_METHANISATION\A01_KITCH_FAB.wrl
+Taille source : 10.6 Mo
+Lien QR : https://arnocesarac-tech.github.io/3d-chantiers/141_26PS/
+Page 3D : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\05_CHANTIERS_PREPARES\141_26PS\index.html
+GLB : non genere
+QR SVG : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_141_26PS_20260710_1042.svg
+QR PDF : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_141_26PS_20260710_1042.pdf
+
+Fichiers a uploader sur GitHub :
+- 141_26PS_lien_3d.txt : 661 o
+- beech.jpg : 5.2 Ko
+- H1582.jpg : 124.9 Ko
+- index.html : 16.3 Ko
+- MELA_U963_ST9.jpg : 16.6 Ko
+- MELA_W908_ST7.jpg : 16.6 Ko
+- modele.wrl : 10.6 Mo
+- Panneau-epicea.jpg : 213.3 Ko
+- U617.jpg : 16.6 Ko
+
+Textures referencees par le WRL et copiees :
+- H1582.jpg : 124.9 Ko
+- MELA_U963_ST9.jpg : 16.6 Ko
+- MELA_W908_ST7.jpg : 16.6 Ko
+- Panneau-epicea.jpg : 213.3 Ko
+- U617.jpg : 16.6 Ko
+- beech.jpg : 5.2 Ko
+
+Textures referencees mais introuvables :
+- aucune
+
+Fichiers donnees detectes dans le dossier export :
+- aucun CSV/TXT/XML/XLS/XLSX detecte
+
+Conclusion :
+- Preparation OK pour upload manuel GitHub.

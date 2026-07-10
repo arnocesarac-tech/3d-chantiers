@@ -1,0 +1,9 @@
+Chantier : 141_26PS
+Modele : A01_KITCH_FAB.wrl
+Modele source : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\01_EXPORT_TOPSOLID_ICI\141_26PS_SPIE _USINE_METHANISATION\A01_KITCH_FAB.wrl
+Taille modele : 10.6 Mo
+Page chantier : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\05_CHANTIERS_PREPARES\141_26PS\index.html
+GLB local : non genere
+Lien 3D : https://arnocesarac-tech.github.io/3d-chantiers/141_26PS/
+QR code SVG : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_141_26PS_20260710_1042.svg
+QR code PDF : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_141_26PS_20260710_1042.pdf
