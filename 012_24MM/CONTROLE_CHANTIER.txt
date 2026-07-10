@@ -1,0 +1,31 @@
+CONTROLE CHANTIER 3D
+====================
+
+Chantier : 012_24MM
+Date preparation : 10/07/2026 10:13
+Fichier 3D source : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\01_EXPORT_TOPSOLID_ICI\012_24MM_BOULANGE_COMPLEXE_SPORTIF_A07_Bande_patere_FAB\Implente_.wrl
+Taille source : 36.0 Ko
+Lien QR : https://arnocesarac-tech.github.io/3d-chantiers/012_24MM/
+Page 3D : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\05_CHANTIERS_PREPARES\012_24MM\index.html
+GLB : non genere
+QR SVG : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_012_24MM_20260710_1013.svg
+QR PDF : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_012_24MM_20260710_1013.pdf
+
+Fichiers a uploader sur GitHub :
+- 012_24MM_lien_3d.txt : 674 o
+- CONTROLE_CHANTIER.txt : 1.1 Ko
+- H3470.jpg : 189.4 Ko
+- index.html : 16.0 Ko
+- modele.wrl : 36.0 Ko
+
+Textures referencees par le WRL et copiees :
+- H3470.jpg : 189.4 Ko
+
+Textures referencees mais introuvables :
+- aucune
+
+Fichiers donnees detectes dans le dossier export :
+- aucun CSV/TXT/XML/XLS/XLSX detecte
+
+Conclusion :
+- Preparation OK pour upload manuel GitHub.

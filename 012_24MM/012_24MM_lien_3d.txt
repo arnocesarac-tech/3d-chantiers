@@ -1,0 +1,9 @@
+Chantier : 012_24MM
+Modele : Implente_.wrl
+Modele source : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\01_EXPORT_TOPSOLID_ICI\012_24MM_BOULANGE_COMPLEXE_SPORTIF_A07_Bande_patere_FAB\Implente_.wrl
+Taille modele : 36.0 Ko
+Page chantier : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\05_CHANTIERS_PREPARES\012_24MM\index.html
+GLB local : non genere
+Lien 3D : https://arnocesarac-tech.github.io/3d-chantiers/012_24MM/
+QR code SVG : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_012_24MM_20260710_1013.svg
+QR code PDF : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_012_24MM_20260710_1013.pdf
