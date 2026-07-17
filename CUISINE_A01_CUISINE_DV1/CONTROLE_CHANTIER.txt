@@ -1,0 +1,29 @@
+CONTROLE CHANTIER 3D
+====================
+
+Chantier : CUISINE_A01_CUISINE_DV1
+Date preparation : 17/07/2026 13:49
+Fichier 3D source : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\01_EXPORT_TOPSOLID_ICI\264_26RM_ATELIERS_STAFF_Cuisine_Crous_STRASBOURG\CUISINE_A01_CUISINE_DV1.wrl
+Taille source : 81.4 Mo
+Lien QR : https://arnocesarac-tech.github.io/3d-chantiers/CUISINE_A01_CUISINE_DV1/
+Page 3D : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\05_CHANTIERS_PREPARES\CUISINE_A01_CUISINE_DV1\index.html
+GLB : non genere
+QR SVG : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_CUISINE_A01_CUISINE_DV1_20260717_1349.svg
+QR PDF : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_CUISINE_A01_CUISINE_DV1_20260717_1349.pdf
+
+Fichiers a uploader sur GitHub :
+- CUISINE_A01_CUISINE_DV1_lien_3d.txt : 770 o
+- index.html : 16.0 Ko
+- modele.wrl : 81.4 Mo  ATTENTION > 25 Mo upload web
+
+Textures referencees par le WRL et copiees :
+- aucune
+
+Textures referencees mais introuvables :
+- aucune
+
+Fichiers donnees detectes dans le dossier export :
+- aucun CSV/TXT/XML/XLS/XLSX detecte
+
+Conclusion :
+- Au moins un fichier depasse 25 Mo : l'upload par navigateur GitHub peut bloquer.
