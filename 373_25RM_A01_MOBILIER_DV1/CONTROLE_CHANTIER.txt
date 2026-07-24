@@ -1,0 +1,44 @@
+CONTROLE CHANTIER 3D
+====================
+
+Chantier : 373_25RM_A01_MOBILIER_DV1
+Date preparation : 24/07/2026 09:12
+Fichier 3D source : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\01_EXPORT_TOPSOLID_ICI\373_25RM_CH_VERDUN_ST_MIHIEL\PHO.wrl
+Taille source : 6.1 Mo
+Lien QR : https://arnocesarac-tech.github.io/3d-chantiers/373_25RM_A01_MOBILIER_DV1/
+Page 3D : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\05_CHANTIERS_PREPARES\373_25RM_A01_MOBILIER_DV1\index.html
+GLB : non genere
+QR SVG : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_373_25RM_A01_MOBILIER_DV1_20260724_0912.svg
+QR PDF : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_373_25RM_A01_MOBILIER_DV1_20260724_0912.pdf
+
+Fichiers a uploader sur GitHub :
+- 373_25RM_A01_MOBILIER_DV1_lien_3d.txt : 719 o
+- beech.jpg : 5.2 Ko
+- couleur_blanc.jpg : 1.6 Ko
+- fibreboard.jpg : 4.8 Ko
+- H1582.jpg : 125.3 Ko
+- index.html : 16.5 Ko
+- MELA_H3131_ST12.jpg : 234.8 Ko
+- modele.wrl : 6.1 Mo
+- Panneau-epicea.jpg : 213.3 Ko
+- S28.jpg : 20.4 Ko
+- U617.jpg : 16.6 Ko
+
+Textures referencees par le WRL et copiees :
+- H1582.jpg : 125.3 Ko
+- MELA_H3131_ST12.jpg : 234.8 Ko
+- Panneau-epicea.jpg : 213.3 Ko
+- S28.jpg : 20.4 Ko
+- U617.jpg : 16.6 Ko
+- beech.jpg : 5.2 Ko
+- couleur_blanc.jpg : 1.6 Ko
+- fibreboard.jpg : 4.8 Ko
+
+Textures referencees mais introuvables :
+- aucune
+
+Fichiers donnees detectes dans le dossier export :
+- aucun CSV/TXT/XML/XLS/XLSX detecte
+
+Conclusion :
+- Preparation OK pour upload manuel GitHub.
