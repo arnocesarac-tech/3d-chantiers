@@ -1,0 +1,44 @@
+CONTROLE CHANTIER 3D
+====================
+
+Chantier : 373_25RM
+Date preparation : 25/08/2026 17:46
+Fichier 3D source : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\01_EXPORT_TOPSOLID_ICI\373_25RM\ACC_.wrl
+Taille source : 21.3 Mo
+Lien QR : https://arnocesarac-tech.github.io/3d-chantiers/373_25RM/
+Page 3D : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\05_CHANTIERS_PREPARES\373_25RM\index.html
+GLB : non genere
+QR SVG : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_373_25RM_20260825_1746.svg
+QR PDF : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_373_25RM_20260825_1746.pdf
+
+Fichiers a uploader sur GitHub :
+- 373_25RM_lien_3d.txt : 617 o
+- beech.jpg : 5.2 Ko
+- fibreb.jpg : 29.3 Ko
+- index.html : 16.6 Ko
+- MELA_U963_ST9.jpg : 16.6 Ko
+- MELA_W908_ST7.jpg : 16.6 Ko
+- miroir-a-composer-l-60-x-h-70-cm-sensea-modulo.jpg : 38.2 Ko
+- modele.wrl : 21.3 Mo
+- STRAT_W980_ST7.jpg : 16.6 Ko
+- wood1.jpg : 3.0 Ko
+- wood194.jpg : 14.3 Ko
+
+Textures referencees par le WRL et copiees :
+- MELA_U963_ST9.jpg : 16.6 Ko
+- MELA_W908_ST7.jpg : 16.6 Ko
+- STRAT_W980_ST7.jpg : 16.6 Ko
+- beech.jpg : 5.2 Ko
+- fibreb.jpg : 29.3 Ko
+- miroir-a-composer-l-60-x-h-70-cm-sensea-modulo.jpg : 38.2 Ko
+- wood1.jpg : 3.0 Ko
+- wood194.jpg : 14.3 Ko
+
+Textures referencees mais introuvables :
+- PIN_nou_naturel.jpg
+
+Fichiers donnees detectes dans le dossier export :
+- aucun CSV/TXT/XML/XLS/XLSX detecte
+
+Conclusion :
+- Des textures sont referencees dans le WRL mais absentes du dossier export.
