@@ -1,0 +1,9 @@
+Chantier : A01_Meuble_rouleau_DV1
+Modele : A01_Meuble_rouleau_DV1.wrl
+Modele source : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\01_EXPORT_TOPSOLID_ICI\280_26RM_HS_CARRE_PRO_MAIZIERES\A01_Meuble_rouleau_DV1.wrl
+Taille modele : 16.2 Mo
+Page chantier : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\05_CHANTIERS_PREPARES\A01_Meuble_rouleau_DV1\index.html
+GLB local : non genere
+Lien 3D : https://arnocesarac-tech.github.io/3d-chantiers/A01_Meuble_rouleau_DV1/
+QR code SVG : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_A01_Meuble_rouleau_DV1_20260828_1105.svg
+QR code PDF : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_A01_Meuble_rouleau_DV1_20260828_1105.pdf

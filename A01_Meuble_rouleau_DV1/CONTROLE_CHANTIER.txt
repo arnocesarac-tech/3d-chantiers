@@ -1,0 +1,38 @@
+CONTROLE CHANTIER 3D
+====================
+
+Chantier : A01_Meuble_rouleau_DV1
+Date preparation : 28/08/2026 11:05
+Fichier 3D source : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\01_EXPORT_TOPSOLID_ICI\280_26RM_HS_CARRE_PRO_MAIZIERES\A01_Meuble_rouleau_DV1.wrl
+Taille source : 16.2 Mo
+Lien QR : https://arnocesarac-tech.github.io/3d-chantiers/A01_Meuble_rouleau_DV1/
+Page 3D : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\05_CHANTIERS_PREPARES\A01_Meuble_rouleau_DV1\index.html
+GLB : non genere
+QR SVG : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_A01_Meuble_rouleau_DV1_20260828_1105.svg
+QR PDF : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_A01_Meuble_rouleau_DV1_20260828_1105.pdf
+
+Fichiers a uploader sur GitHub :
+- A01_Meuble_rouleau_DV1_lien_3d.txt : 746 o
+- beech.jpg : 5.2 Ko
+- fibreb.jpg : 29.3 Ko
+- H1582.jpg : 124.9 Ko
+- index.html : 26.8 Ko
+- MELA_W908_ST7.jpg : 16.6 Ko
+- modele.wrl : 16.2 Mo
+- STRAT_W980_ST7.jpg : 16.6 Ko
+
+Textures referencees par le WRL et copiees :
+- H1582.jpg : 124.9 Ko
+- MELA_W908_ST7.jpg : 16.6 Ko
+- STRAT_W980_ST7.jpg : 16.6 Ko
+- beech.jpg : 5.2 Ko
+- fibreb.jpg : 29.3 Ko
+
+Textures referencees mais introuvables :
+- aucune
+
+Fichiers donnees detectes dans le dossier export :
+- Achat _.xlsm : 866.1 Ko
+
+Conclusion :
+- Preparation OK pour upload manuel GitHub.
