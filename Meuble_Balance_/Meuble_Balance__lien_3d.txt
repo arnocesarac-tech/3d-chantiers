@@ -1,0 +1,9 @@
+Chantier : Meuble_Balance_
+Modele : Meuble_Balance_.wrl
+Modele source : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\01_EXPORT_TOPSOLID_ICI\280_26RM_HS_CARRE_PRO_MAIZIERES\Meuble_Balance_.wrl
+Taille modele : 16.2 Mo
+Page chantier : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\05_CHANTIERS_PREPARES\Meuble_Balance_\index.html
+GLB local : non genere
+Lien 3D : https://arnocesarac-tech.github.io/3d-chantiers/Meuble_Balance_/
+QR code SVG : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_Meuble_Balance__20260828_1009.svg
+QR code PDF : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_Meuble_Balance__20260828_1009.pdf
