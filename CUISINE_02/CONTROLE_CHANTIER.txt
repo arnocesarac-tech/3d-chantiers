@@ -1,0 +1,44 @@
+CONTROLE CHANTIER 3D
+====================
+
+Chantier : CUISINE_02
+Date preparation : 02/09/2026 10:53
+Fichier 3D source : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\01_EXPORT_TOPSOLID_ICI\318_26PC_RESILIANS_Cuisine_2\CUISINE_02.wrl
+Taille source : 16.5 Mo
+Lien QR : https://arnocesarac-tech.github.io/3d-chantiers/CUISINE_02/
+Page 3D : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\05_CHANTIERS_PREPARES\CUISINE_02\index.html
+GLB : non genere
+QR SVG : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_CUISINE_02_20260902_1053.svg
+QR PDF : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_CUISINE_02_20260902_1053.pdf
+
+Fichiers a uploader sur GitHub :
+- beech.jpg : 5.2 Ko
+- CUISINE_02_lien_3d.txt : 659 o
+- H1582.jpg : 125.3 Ko
+- H3451.jpg : 150.9 Ko
+- index.html : 29.3 Ko
+- MELA_U232_ST9.jpg : 16.6 Ko
+- MELA_U963_ST9.jpg : 16.6 Ko
+- miroir-a-composer-l-60-x-h-70-cm-sensea-modulo.jpg : 38.2 Ko
+- modele.wrl : 16.5 Mo
+- Panneau-epicea.jpg : 213.3 Ko
+- U617.jpg : 16.6 Ko
+
+Textures referencees par le WRL et copiees :
+- H1582.jpg : 125.3 Ko
+- H3451.jpg : 150.9 Ko
+- MELA_U232_ST9.jpg : 16.6 Ko
+- MELA_U963_ST9.jpg : 16.6 Ko
+- Panneau-epicea.jpg : 213.3 Ko
+- U617.jpg : 16.6 Ko
+- beech.jpg : 5.2 Ko
+- miroir-a-composer-l-60-x-h-70-cm-sensea-modulo.jpg : 38.2 Ko
+
+Textures referencees mais introuvables :
+- aucune
+
+Fichiers donnees detectes dans le dossier export :
+- Achat _02.xlsm : 865.7 Ko
+
+Conclusion :
+- Preparation OK pour upload manuel GitHub.
