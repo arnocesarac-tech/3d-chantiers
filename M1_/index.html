@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>3D chantier - M1_</title>
+  <style>
+    body {
+      margin: 0; overflow: hidden; font-family: Arial, sans-serif;
+      background: #4f5961; color: #17202a; overscroll-behavior: none;
+    }
+    #viewer { width: 100vw; height: 100vh; display: block; touch-action: none; }
+    .label {
+      position: fixed; left: 10px; top: 10px; z-index: 2;
+      background: rgba(243,245,246,.94); border: 1px solid #cbd2d7;
+      border-radius: 6px; padding: 8px 10px; font-size: 13px;
+    }
+    .tools {
+      position: fixed; right: 10px; top: 10px; z-index: 3;
+      display: flex; gap: 6px; flex-wrap: wrap; justify-content: flex-end;
+      max-width: min(760px, calc(100vw - 20px));
+    }
+    button {
+      border: 1px solid #aeb7be; background: rgba(243,245,246,.95);
+      color: #17202a; border-radius: 6px; padding: 8px 10px;
+      font-size: 13px; cursor: pointer;
+    }
+    button:active { transform: translateY(1px); }
+    button[aria-pressed="true"] {
+      background: #25333d; color: #fff; border-color: #25333d;
+    }
+    button:disabled { opacity: .45; cursor: not-allowed; }
+    .status {
+      position: fixed; left: 10px; bottom: 10px; z-index: 2;
+      background: rgba(243,245,246,.94); border: 1px solid #cbd2d7;
+      border-radius: 6px; padding: 8px 10px; font-size: 13px; max-width: 360px;
+    }
+    .help {
+      position: fixed; left: 10px; bottom: 10px; z-index: 2;
+      background: rgba(243,245,246,.94); border: 1px solid #cbd2d7;
+      border-radius: 6px; padding: 8px 10px; font-size: 13px;
+      line-height: 1.35; max-width: 360px;
+    }
+    .panel {
+      position: fixed; right: 10px; bottom: 10px; z-index: 3;
+      background: rgba(243,245,246,.96); border: 1px solid #cbd2d7;
+      border-radius: 6px; padding: 10px 12px; font-size: 13px;
+      line-height: 1.45; min-width: 240px; max-width: 440px;
+      max-height: min(70vh, 560px); overflow: auto; display: none;
+    }
+    .panel strong { display: block; margin-bottom: 4px; }
+    .panel details { border-top: 1px solid #d3d9dd; padding-top: 8px; margin-top: 8px; }
+    .panel summary { cursor: pointer; font-weight: 700; }
+    .material-row {
+      display: grid; grid-template-columns: 42px 1fr;
+      gap: 8px; align-items: center; margin-top: 8px;
+    }
+    .material-row.no-preview { grid-template-columns: 1fr; }
+    .material-row img {
+      width: 42px; height: 42px; object-fit: cover;
+      border-radius: 4px; border: 1px solid #cbd2d7; background: #fff;
+    }
+    .material-name {
+      min-width: 0; overflow-wrap: anywhere;
+    }
+    .hardware-row { padding: 7px 0; border-bottom: 1px solid #dbe0e3; }
+    .hardware-row:last-child { border-bottom: 0; }
+    .info-meta { color: #52606a; font-size: 12px; overflow-wrap: anywhere; }
+    .empty-info { color: #52606a; margin-top: 8px;
+    }
+    .measure-dot {
+      position: fixed; z-index: 4; width: 22px; height: 22px;
+      border-radius: 50%; background: #f8d24a; border: 2px solid #1e252b;
+      color: #1e252b; font-weight: 700; font-size: 12px; line-height: 22px;
+      text-align: center; pointer-events: none; transform: translate(-50%, -50%);
+    }
+    .measure-label {
+      position: fixed; z-index: 4; transform: translate(-50%, -140%);
+      background: #1e252b; color: #fff; border-radius: 4px;
+      padding: 5px 7px; font-size: 12px; font-weight: 700;
+      pointer-events: none; white-space: nowrap;
+    }
+    .measure-result { font-size: 20px; font-weight: 700; margin: 5px 0 2px; }
+    .measure-axis { color: #52606a; font-variant-numeric: tabular-nums; }
+    .help-grid {
+      display: grid; grid-template-columns: 36px 1fr;
+      align-items: center; gap: 8px 10px; margin-top: 8px;
+    }
+    .gesture {
+      width: 34px; height: 30px; display: grid; place-items: center;
+      border: 1px solid #aeb7be; border-radius: 4px; font-weight: 700;
+    }
+    @media (max-width: 700px) {
+      .label { top: auto; bottom: max(8px, env(safe-area-inset-bottom)); max-width: calc(100vw - 20px); }
+      .tools { left: 8px; right: 8px; top: 8px; justify-content: flex-start; gap: 5px; max-width: none; }
+      button { padding: 8px 9px; font-size: 12px; }
+      .help { display: none; }
+      .panel { left: 8px; right: 8px; bottom: 50px; max-width: none; max-height: 48vh; }
+    }
+  </style>
+</head>
+<body>
+  <div class="label">3D chantier - M1_</div>
+  <div class="tools">
+    <button id="resetView">Recentrer</button>
+    <button id="frontView">Face</button>
+    <button id="sideView">C&ocirc;t&eacute;</button>
+    <button id="topView">Dessus</button>
+    <button id="realisticView" aria-pressed="false">R&eacute;aliste</button>
+    <button id="infoView" aria-pressed="false">Infos chantier</button>
+    <button id="dimsView">Dimensions</button>
+    <button id="measureView" aria-pressed="false">Mesurer</button>
+    <button id="helpView">Aide</button>
+  </div>
+  <div id="viewer"></div>
+  <div class="status" id="status">Chargement 3D...</div>
+  <div class="help" id="help">1 doigt : rotation &nbsp;|&nbsp; 2 doigts : deplacer / zoomer</div>
+  <div class="panel" id="infoPanel"></div>
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.164.1/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.164.1/examples/jsm/"
+      }
+    }
+  </script>
+  <script type="module">
+    import * as THREE from 'three';
+    import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+    import { VRMLLoader } from 'three/addons/loaders/VRMLLoader.js';
+
+    const container = document.getElementById('viewer');
+    const status = document.getElementById('status');
+    const help = document.getElementById('help');
+    const scene = new THREE.Scene();
+    scene.background = new THREE.Color(0x5b666f);
+
+    const camera = new THREE.PerspectiveCamera(45, innerWidth / innerHeight, 0.1, 100000);
+    const renderer = new THREE.WebGLRenderer({ antialias: true });
+    renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+    renderer.setSize(innerWidth, innerHeight);
+    renderer.outputColorSpace = THREE.SRGBColorSpace;
+    renderer.toneMapping = THREE.ACESFilmicToneMapping;
+    renderer.toneMappingExposure = 1.05;
+    container.appendChild(renderer.domElement);
+
+    const controls = new OrbitControls(camera, renderer.domElement);
+    controls.enableDamping = true;
+    controls.enablePan = true;
+    controls.zoomToCursor = true;
+    controls.touches.ONE = THREE.TOUCH.ROTATE;
+    controls.touches.TWO = THREE.TOUCH.DOLLY_PAN;
+
+    scene.add(new THREE.HemisphereLight(0xffffff, 0x5b6470, 2.0));
+    const light = new THREE.DirectionalLight(0xffffff, 2.4);
+    light.position.set(200, 300, 150);
+    scene.add(light);
+    const fillLight = new THREE.DirectionalLight(0xffffff, 0.65);
+    fillLight.position.set(-180, 120, -220);
+    scene.add(fillLight);
+
+    let currentObject = null;
+    let modelBox = null;
+    let modelSize = null;
+    let modelDistance = 100;
+    let edgesGroup = null;
+    let renderMode = 'neutral';
+    const originalMaterials = new Map();
+    const neutralMaterials = new Map();
+    let measureMode = false;
+    let measurePoints = [];
+    let measureDots = [];
+    let measureLine = null;
+    let measureLabel = null;
+    let pointerStart = null;
+    const activePointers = new Set();
+    let maxPointersInGesture = 0;
+    const raycaster = new THREE.Raycaster();
+    const pointer = new THREE.Vector2();
+    const infoPanel = document.getElementById('infoPanel');
+    const textureRefs = [{"file": "H1582.jpg", "label": "H1582"}, {"file": "MELA_U763_ST9.jpg", "label": "MELA U763 ST9"}, {"file": "MELA_W1100_ST9.jpg", "label": "MELA W1100 ST9"}, {"file": "MELA_W908_ST7.jpg", "label": "MELA W908 ST7"}, {"file": "Panneau-epicea.jpg", "label": "Panneau epicea"}, {"file": "STRAT_U763_ST9.jpg", "label": "STRAT U763 ST9"}, {"file": "STRAT_W1100_ST9.jpg", "label": "STRAT W1100 ST9"}, {"file": "STRAT_W980_ST7.jpg", "label": "STRAT W980 ST7"}, {"file": "U617.jpg", "label": "U617"}, {"file": "U763_A3_10DE_fur.jpg", "label": "U763 A3 10DE fur"}, {"file": "W1100.jpg", "label": "W1100"}, {"file": "beech.jpg", "label": "beech"}, {"file": "brushed.jpg", "label": "brushed"}, {"file": "couleur_blanc.jpg", "label": "couleur blanc"}];
+    const chantierInfo = {"chantier": "26JPC BALDINI Mobilier", "materials": [{"name": "MELA U763 ST9", "category": "Matiere", "texture": "MELA_U763_ST9.jpg"}, {"name": "MELA W1100 ST9", "category": "Matiere", "texture": "MELA_W1100_ST9.jpg"}, {"name": "MELA W908 ST7", "category": "Matiere", "texture": "MELA_W908_ST7.jpg"}, {"name": "MELA BLANC HYDRO", "category": "Matiere", "texture": ""}, {"name": "STRAT U763 ST9", "category": "Matiere", "texture": "MELA_U763_ST9.jpg"}, {"name": "STRAT W1100 ST9", "category": "Matiere", "texture": "MELA_W1100_ST9.jpg"}, {"name": "STRAT W980 ST7", "category": "Matiere", "texture": "STRAT_W980_ST7.jpg"}, {"name": "U763 23x1mm", "category": "Chant / revetement", "texture": "MELA_U763_ST9.jpg"}, {"name": "W1100 23x1mm", "category": "Chant / revetement", "texture": "MELA_W1100_ST9.jpg"}, {"name": "W1100 43x1mm", "category": "Chant / revetement", "texture": "MELA_W1100_ST9.jpg"}, {"name": "BLANC 1mm 19", "category": "Chant / revetement", "texture": ""}, {"name": "3 PLIS EPICEA", "category": "Matiere", "texture": ""}, {"name": "DECOR BOIS", "category": "Matiere", "texture": ""}, {"name": "PANTYR", "category": "Matiere", "texture": ""}], "hardware": [{"name": "Tourillon bois 30x8", "supplier": "STOCK", "reference": ""}, {"name": "Boitier d'excentrique 19", "supplier": "", "reference": ""}, {"name": "Goujon d'excentrique L34", "supplier": "", "reference": ""}, {"name": "Taquet standard  \u00d85 nickel\u00e9", "supplier": "STOCK", "reference": "STD"}, {"name": "Charni\u00e8re EMBASE en croix EXPANDO", "supplier": "BATIFER", "reference": "286248"}, {"name": "Tourillon bois D8 L30", "supplier": "", "reference": ""}, {"name": "AXILO EMBASE carr\u00e9", "supplier": "BATIFER", "reference": "384289"}, {"name": "AXILO PIED 80mm", "supplier": "BATIFER", "reference": "384291"}, {"name": "Charni\u00e8re applique CLIP top BLUMOTION 110\u00b0", "supplier": "BATIFER", "reference": "294481"}, {"name": "Taquet \u00e0 clou", "supplier": "STOCK", "reference": ""}, {"name": "Charni\u00e8re applique CLIP top SANS AMORT. 110\u00b0", "supplier": "BATIFER", "reference": "294802"}, {"name": "AXILO CLIPS plinthe", "supplier": "BATIFER", "reference": "384299"}, {"name": "SYMO Cylindre", "supplier": "HAFELE", "reference": "S'ENTROUVRANT"}, {"name": "SYMO Rosace", "supplier": "HAFELE", "reference": "219.19.677"}, {"name": "G\u00e2che \u00e9querre 40x13x12", "supplier": "HAFELE", "reference": "239.41.013"}, {"name": "SYMO 1PT AXE25 GCH", "supplier": "HAFELE", "reference": "232.26.610"}, {"name": "Equerre sous \u00e9vier", "supplier": "STOCK", "reference": "260.25.703"}, {"name": "SYMO 1PT AXE25 DRT", "supplier": "HAFELE", "reference": "232.26.600"}, {"name": "Batte PVC  2500x25x4,8", "supplier": "HAFELE", "reference": ""}, {"name": "Bloqueur automatique bas", "supplier": "LMC", "reference": "BLO610"}, {"name": "SYMO Serrure espagnolette axe 25 DRT PICCOLO-NOVA", "supplier": "HAFELE", "reference": "224.63.610"}]};
+
+    function mm(value) {
+      return Math.round(value * 1000);
+    }
+
+    function escapeHtml(value) {
+      return String(value ?? '')
+        .replaceAll('&', '&amp;')
+        .replaceAll('<', '&lt;')
+        .replaceAll('>', '&gt;')
+        .replaceAll('"', '&quot;')
+        .replaceAll("'", '&#039;');
+    }
+
+    function fitObject(object) {
+      const box = new THREE.Box3().setFromObject(object);
+      const size = box.getSize(new THREE.Vector3());
+      const center = box.getCenter(new THREE.Vector3());
+      const maxDim = Math.max(size.x, size.y, size.z) || 1;
+      const distance = maxDim * 1.8;
+      object.position.sub(center);
+      modelBox = new THREE.Box3().setFromObject(object);
+      modelSize = modelBox.getSize(new THREE.Vector3());
+      modelDistance = distance;
+      setView(distance, distance * 0.7, distance);
+      updateDimensionsPanel(false);
+    }
+
+    function setView(x, y, z) {
+      camera.position.set(x, y, z);
+      camera.near = Math.max(modelDistance / 1000, 0.1);
+      camera.far = modelDistance * 100;
+      camera.updateProjectionMatrix();
+      controls.target.set(0, 0, 0);
+      controls.update();
+    }
+
+    function createEdges(object) {
+      if (edgesGroup) scene.remove(edgesGroup);
+      edgesGroup = new THREE.Group();
+      const material = new THREE.LineBasicMaterial({ color: 0x1e252b, transparent: true, opacity: 0.35 });
+      object.traverse((child) => {
+        if (!child.isMesh || !child.geometry) return;
+        const edges = new THREE.EdgesGeometry(child.geometry, 30);
+        const lines = new THREE.LineSegments(edges, material);
+        child.updateWorldMatrix(true, false);
+        lines.applyMatrix4(child.matrixWorld);
+        edgesGroup.add(lines);
+      });
+      scene.add(edgesGroup);
+    }
+
+    function rememberMaterials(object) {
+      originalMaterials.clear();
+      neutralMaterials.clear();
+      object.traverse((child) => {
+        if (child.isMesh && child.material) originalMaterials.set(child.uuid, child.material);
+      });
+    }
+
+    function materialList(material) {
+      return Array.isArray(material) ? material : [material];
+    }
+
+    function neutralMaterial(original) {
+      if (!original) return new THREE.MeshStandardMaterial({ color: 0xd8d8d2 });
+      if (neutralMaterials.has(original.uuid)) return neutralMaterials.get(original.uuid);
+      const material = new THREE.MeshStandardMaterial({
+        color: 0xd8d8d2,
+        roughness: 0.76,
+        metalness: 0.0,
+        side: original.side
+      });
+      neutralMaterials.set(original.uuid, material);
+      return material;
+    }
+
+    function neutralMaterialList(original) {
+      const mapped = materialList(original).map((material) => neutralMaterial(material));
+      return Array.isArray(original) ? mapped : mapped[0];
+    }
+
+    function prepareRealisticMaterial(material) {
+      materialList(material).forEach((item) => {
+        if (item && item.map) {
+          item.map.colorSpace = THREE.SRGBColorSpace;
+          item.map.anisotropy = Math.min(8, renderer.capabilities.getMaxAnisotropy());
+          item.map.needsUpdate = true;
+        }
+        if (item) item.needsUpdate = true;
+      });
+    }
+
+    function hasRealTextures() {
+      for (const material of originalMaterials.values()) {
+        if (materialList(material).some((item) => item && item.map)) return true;
+      }
+      return false;
+    }
+
+    function setRenderMode(mode) {
+      if (!currentObject) return;
+      if (mode === 'realistic' && !hasRealTextures()) return;
+      renderMode = mode;
+      currentObject.traverse((child) => {
+        if (!child.isMesh) return;
+        const original = originalMaterials.get(child.uuid);
+        if (renderMode === 'realistic') {
+          child.material = original;
+          prepareRealisticMaterial(original);
+        } else {
+          child.material = neutralMaterialList(original);
+        }
+      });
+      const button = document.getElementById('realisticView');
+      button.setAttribute('aria-pressed', String(renderMode === 'realistic'));
+      button.textContent = renderMode === 'realistic' ? 'Neutre' : 'Réaliste';
+    }
+
+    function materialRow(item) {
+      const texture = item.texture || item.file || '';
+      const preview = texture
+        ? '<img src="' + escapeHtml(texture) + '" alt="">'
+        : '';
+      const prefix = item.category === 'Chant / revetement' ? 'Chant ' : '';
+      return '<div class="material-row' + (texture ? '' : ' no-preview') + '">' + preview +
+        '<div class="material-name"><b>' + escapeHtml(prefix + (item.name || item.label)) + '</b></div></div>';
+    }
+
+    function setInfoPanelMode(mode) {
+      infoPanel.dataset.panel = mode;
+      document.getElementById('infoView').setAttribute('aria-pressed', String(mode === 'chantier'));
+    }
+
+    function hideInfoPanel() {
+      infoPanel.style.display = 'none';
+      setInfoPanelMode('');
+    }
+
+    function showChantierInfo() {
+      const shouldClose = infoPanel.style.display === 'block' && infoPanel.dataset.panel === 'chantier';
+      setMeasureMode(false);
+      if (shouldClose) return;
+      let html = '<strong>Infos chantier</strong>';
+      if (chantierInfo.chantier) html += '<div>' + escapeHtml(chantierInfo.chantier) + '</div>';
+      if (chantierInfo.error) {
+        html += '<div class="empty-info">' + escapeHtml(chantierInfo.error) + '</div>';
+      }
+
+      const materials = chantierInfo.materials && chantierInfo.materials.length
+        ? chantierInfo.materials
+        : textureRefs.map((item) => ({ ...item, name: item.label, category: 'Texture WRL' }));
+      html += '<details open><summary>Matieres et revetements</summary>';
+      html += materials.length
+        ? materials.map(materialRow).join('')
+        : '<div class="empty-info">Aucune texture ni matiere detectee.</div>';
+      html += '</details>';
+
+      const hardware = chantierInfo.hardware || [];
+      html += '<details open><summary>Quincaillerie</summary>';
+      html += hardware.length ? hardware.map((item) => {
+        const supplier = item.supplier && !item.supplier.toUpperCase().startsWith('STOCK')
+          ? item.supplier
+          : (item.reference || '');
+        return '<div class="hardware-row"><b>' + escapeHtml(item.name) + '</b>' +
+          (supplier ? '<span class="info-meta"> — ' + escapeHtml(supplier) + '</span>' : '') + '</div>';
+      }).join('') : '<div class="empty-info">Aucune quincaillerie detectee.</div>';
+      html += '</details>';
+
+      infoPanel.innerHTML = html;
+      infoPanel.style.display = 'block';
+      setInfoPanelMode('chantier');
+    }
+
+    function updateDimensionsPanel(show) {
+      if (!modelSize) return;
+      infoPanel.innerHTML =
+        '<strong>Dimensions indicatives</strong>' +
+        'Largeur X : ' + mm(modelSize.x) + ' mm<br>' +
+        'Profondeur Y : ' + mm(modelSize.y) + ' mm<br>' +
+        'Hauteur Z : ' + mm(modelSize.z) + ' mm';
+      if (show) {
+        infoPanel.style.display = 'block';
+        setInfoPanelMode('dimensions');
+      } else {
+        hideInfoPanel();
+      }
+    }
+
+    function clearMeasure() {
+      measurePoints = [];
+      measureDots.forEach((dot) => dot.element.remove());
+      measureDots = [];
+      if (measureLabel) {
+        measureLabel.remove();
+        measureLabel = null;
+      }
+      if (measureLine) {
+        scene.remove(measureLine);
+        measureLine.geometry.dispose();
+        measureLine.material.dispose();
+        measureLine = null;
+      }
+    }
+
+    function setMeasureMode(active) {
+      measureMode = active;
+      controls.enabled = true;
+      document.getElementById('measureView').textContent = active ? 'Stop mesure' : 'Mesurer';
+      document.getElementById('measureView').setAttribute('aria-pressed', String(active));
+      if (active) {
+        clearMeasure();
+        infoPanel.innerHTML =
+          '<strong>Mesure indicative</strong>' +
+          'Touche le point 1 puis le point 2.<br>' +
+          '<small>Tu peux toujours tourner et zoomer entre les deux points.</small>';
+        infoPanel.style.display = 'block';
+        setInfoPanelMode('measure');
+      } else {
+        clearMeasure();
+        hideInfoPanel();
+      }
+    }
+
+    function addMeasureDot(point) {
+      const dot = document.createElement('div');
+      dot.className = 'measure-dot';
+      dot.textContent = String(measureDots.length + 1);
+      document.body.appendChild(dot);
+      measureDots.push({ element: dot, point: point.clone() });
+      updateMeasureOverlays();
+    }
+
+    function screenPosition(point) {
+      const rect = renderer.domElement.getBoundingClientRect();
+      const projected = point.clone().project(camera);
+      return {
+        x: rect.left + (projected.x * 0.5 + 0.5) * rect.width,
+        y: rect.top + (-projected.y * 0.5 + 0.5) * rect.height,
+        visible: projected.z >= -1 && projected.z <= 1
+      };
+    }
+
+    function updateMeasureOverlays() {
+      measureDots.forEach((dot) => {
+        const position = screenPosition(dot.point);
+        dot.element.style.left = position.x + 'px';
+        dot.element.style.top = position.y + 'px';
+        dot.element.style.display = position.visible ? 'block' : 'none';
+      });
+      if (measureLabel && measurePoints.length === 2) {
+        const middle = measurePoints[0].clone().add(measurePoints[1]).multiplyScalar(0.5);
+        const position = screenPosition(middle);
+        measureLabel.style.left = position.x + 'px';
+        measureLabel.style.top = position.y + 'px';
+        measureLabel.style.display = position.visible ? 'block' : 'none';
+      }
+    }
+
+    function pixelDistance(point, clientX, clientY) {
+      const position = screenPosition(point);
+      return Math.hypot(position.x - clientX, position.y - clientY);
+    }
+
+    function snapMeasurePoint(hit, clientX, clientY) {
+      const mesh = hit.object;
+      const geometry = mesh.geometry;
+      const position = geometry && geometry.attributes && geometry.attributes.position;
+      const face = hit.face;
+      if (!mesh || !position || !face) return { point: hit.point.clone(), type: 'surface' };
+
+      const matrix = mesh.matrixWorld;
+      const vertices = [face.a, face.b, face.c]
+        .map((index) => new THREE.Vector3().fromBufferAttribute(position, index).applyMatrix4(matrix));
+      const nearestVertex = vertices
+        .map((point) => ({ point, distance: pixelDistance(point, clientX, clientY) }))
+        .sort((a, b) => a.distance - b.distance)[0];
+
+      const edgePairs = [[0, 1], [1, 2], [2, 0]];
+      const nearestEdge = edgePairs
+        .map(([start, end]) => {
+          const point = new THREE.Line3(vertices[start], vertices[end])
+            .closestPointToPoint(hit.point, true, new THREE.Vector3());
+          return { point, distance: pixelDistance(point, clientX, clientY) };
+        })
+        .sort((a, b) => a.distance - b.distance)[0];
+
+      const snapPixels = matchMedia('(pointer: coarse)').matches ? 34 : 24;
+      if (nearestVertex && nearestVertex.distance <= snapPixels) {
+        return { point: nearestVertex.point.clone(), type: 'sommet' };
+      }
+      if (nearestEdge && nearestEdge.distance <= snapPixels) {
+        return { point: nearestEdge.point.clone(), type: 'arete' };
+      }
+      return { point: hit.point.clone(), type: 'surface' };
+    }
+
+    function drawMeasureLine() {
+      if (measureLine) {
+        scene.remove(measureLine);
+        measureLine.geometry.dispose();
+        measureLine.material.dispose();
+      }
+      const geometry = new THREE.BufferGeometry().setFromPoints(measurePoints);
+      const material = new THREE.LineBasicMaterial({ color: 0xf8d24a, depthTest: false });
+      measureLine = new THREE.Line(geometry, material);
+      measureLine.renderOrder = 10;
+      scene.add(measureLine);
+    }
+
+    function takeMeasurePoint(clientX, clientY) {
+      if (!measureMode || !currentObject) return;
+      const rect = renderer.domElement.getBoundingClientRect();
+      pointer.x = ((clientX - rect.left) / rect.width) * 2 - 1;
+      pointer.y = -((clientY - rect.top) / rect.height) * 2 + 1;
+      raycaster.setFromCamera(pointer, camera);
+      const hits = raycaster.intersectObject(currentObject, true);
+      if (!hits.length) return;
+
+      if (measurePoints.length >= 2) clearMeasure();
+      const snapped = snapMeasurePoint(hits[0], clientX, clientY);
+      measurePoints.push(snapped.point);
+      addMeasureDot(snapped.point);
+
+      if (measurePoints.length === 1) {
+        infoPanel.innerHTML =
+          '<strong>Mesure indicative</strong>' +
+          'Point 1 pris sur ' + snapped.type + '.<br>' +
+          '<small>Tourne ou zoome si besoin, puis touche le point 2.</small>';
+        infoPanel.style.display = 'block';
+      }
+
+      if (measurePoints.length === 2) {
+        drawMeasureLine();
+        const delta = measurePoints[1].clone().sub(measurePoints[0]);
+        const distance = delta.length();
+        measureLabel = document.createElement('div');
+        measureLabel.className = 'measure-label';
+        measureLabel.textContent = mm(distance) + ' mm';
+        document.body.appendChild(measureLabel);
+        infoPanel.innerHTML =
+          '<strong>Mesure indicative</strong>' +
+          '<div class="measure-result">' + mm(distance) + ' mm</div>' +
+          '<div class="measure-axis">X ' + mm(Math.abs(delta.x)) + ' &nbsp; Y ' + mm(Math.abs(delta.y)) + ' &nbsp; Z ' + mm(Math.abs(delta.z)) + ' mm</div>' +
+          '<small>Point 2 pris sur ' + snapped.type + '. Touche un nouveau point pour recommencer.</small>';
+        infoPanel.style.display = 'block';
+        updateMeasureOverlays();
+      }
+    }
+
+    renderer.domElement.addEventListener('pointerdown', (event) => {
+      activePointers.add(event.pointerId);
+      maxPointersInGesture = Math.max(maxPointersInGesture, activePointers.size);
+      if (activePointers.size === 1) {
+        pointerStart = { id: event.pointerId, x: event.clientX, y: event.clientY, moved: 0 };
+      }
+    });
+    renderer.domElement.addEventListener('pointermove', (event) => {
+      if (!pointerStart || pointerStart.id !== event.pointerId) return;
+      pointerStart.moved = Math.max(
+        pointerStart.moved,
+        Math.hypot(event.clientX - pointerStart.x, event.clientY - pointerStart.y)
+      );
+    });
+    renderer.domElement.addEventListener('pointerup', (event) => {
+      const isTap = measureMode && pointerStart && pointerStart.id === event.pointerId &&
+        pointerStart.moved < 10 && maxPointersInGesture === 1;
+      activePointers.delete(event.pointerId);
+      if (isTap) takeMeasurePoint(event.clientX, event.clientY);
+      if (activePointers.size === 0) {
+        pointerStart = null;
+        maxPointersInGesture = 0;
+      }
+    });
+    renderer.domElement.addEventListener('pointercancel', (event) => {
+      activePointers.delete(event.pointerId);
+      if (activePointers.size === 0) {
+        pointerStart = null;
+        maxPointersInGesture = 0;
+      }
+    });
+
+    document.getElementById('resetView').addEventListener('click', () => setView(modelDistance, modelDistance * 0.7, modelDistance));
+    document.getElementById('frontView').addEventListener('click', () => setView(0, modelDistance * 0.15, modelDistance));
+    document.getElementById('sideView').addEventListener('click', () => setView(modelDistance, modelDistance * 0.15, 0));
+    document.getElementById('topView').addEventListener('click', () => setView(0, modelDistance, 0.01));
+    document.getElementById('realisticView').addEventListener('click', () => {
+      setRenderMode(renderMode === 'realistic' ? 'neutral' : 'realistic');
+    });
+    document.getElementById('infoView').addEventListener('click', showChantierInfo);
+    document.getElementById('dimsView').addEventListener('click', () => {
+      const visible = !(infoPanel.style.display === 'block' && infoPanel.dataset.panel === 'dimensions');
+      setMeasureMode(false);
+      updateDimensionsPanel(visible);
+    });
+    document.getElementById('measureView').addEventListener('click', () => setMeasureMode(!measureMode));
+    document.getElementById('helpView').addEventListener('click', () => {
+      setMeasureMode(false);
+      infoPanel.innerHTML =
+        '<strong>Navigation</strong>' +
+        '<div class="help-grid">' +
+          '<div class="gesture">1</div><div>Glisser : rotation</div>' +
+          '<div class="gesture">2</div><div>Glisser : deplacer</div>' +
+          '<div class="gesture">2</div><div>Ecarter / pincer : zoom</div>' +
+        '</div>';
+      infoPanel.style.display = 'block';
+      setInfoPanelMode('help');
+    });
+
+    const loader = new VRMLLoader();
+    loader.load('modele.wrl', (object) => {
+      currentObject = object;
+      scene.add(object);
+      rememberMaterials(object);
+      fitObject(object);
+      createEdges(object);
+      const realisticButton = document.getElementById('realisticView');
+      realisticButton.disabled = !hasRealTextures();
+      realisticButton.title = hasRealTextures() ? 'Afficher les textures exportees' : 'Aucune texture dans cet export';
+      setRenderMode('neutral');
+      status.style.display = 'none';
+      setTimeout(() => { help.style.display = 'none'; }, 7000);
+    }, undefined, (error) => {
+      status.textContent = 'Erreur chargement 3D';
+      console.error(error);
+    });
+
+    addEventListener('resize', () => {
+      camera.aspect = innerWidth / innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(innerWidth, innerHeight);
+      updateMeasureOverlays();
+    });
+
+    function animate() {
+      requestAnimationFrame(animate);
+      controls.update();
+      updateMeasureOverlays();
+      renderer.render(scene, camera);
+    }
+    animate();
+  </script>
+</body>
+</html>
