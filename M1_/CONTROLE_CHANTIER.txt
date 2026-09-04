@@ -2,14 +2,14 @@ CONTROLE CHANTIER 3D
 ====================
 
 Chantier : M1_
-Date preparation : 04/09/2026 09:59
+Date preparation : 04/09/2026 10:03
 Fichier 3D source : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\01_EXPORT_TOPSOLID_ICI\187_26JPC_BALDINI_Mobilier\M1_.wrl
 Taille source : 19.6 Mo
 Lien QR : https://arnocesarac-tech.github.io/3d-chantiers/M1_/
 Page 3D : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\05_CHANTIERS_PREPARES\M1_\index.html
 GLB : non genere
-QR SVG : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_M1__20260904_0959.svg
-QR PDF : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_M1__20260904_0959.pdf
+QR SVG : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_M1__20260904_1003.svg
+QR PDF : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_M1__20260904_1003.pdf
 
 Fichiers a uploader sur GitHub :
 - beech.jpg : 5.2 Ko
