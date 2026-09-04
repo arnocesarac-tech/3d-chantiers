@@ -1,9 +1,9 @@
 Chantier : M1_
 Modele : M1_.wrl
 Modele source : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\01_EXPORT_TOPSOLID_ICI\187_26JPC_BALDINI_Mobilier\M1_.wrl
-Taille modele : 20.1 Mo
+Taille modele : 19.6 Mo
 Page chantier : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\05_CHANTIERS_PREPARES\M1_\index.html
 GLB local : non genere
 Lien 3D : https://arnocesarac-tech.github.io/3d-chantiers/M1_/
-QR code SVG : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_M1__20260904_0945.svg
-QR code PDF : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_M1__20260904_0945.pdf
+QR code SVG : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_M1__20260904_0959.svg
+QR code PDF : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_M1__20260904_0959.pdf

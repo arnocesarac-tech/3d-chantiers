@@ -2,27 +2,27 @@ CONTROLE CHANTIER 3D
 ====================
 
 Chantier : M1_
-Date preparation : 04/09/2026 09:45
+Date preparation : 04/09/2026 09:59
 Fichier 3D source : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\01_EXPORT_TOPSOLID_ICI\187_26JPC_BALDINI_Mobilier\M1_.wrl
-Taille source : 20.1 Mo
+Taille source : 19.6 Mo
 Lien QR : https://arnocesarac-tech.github.io/3d-chantiers/M1_/
 Page 3D : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\05_CHANTIERS_PREPARES\M1_\index.html
 GLB : non genere
-QR SVG : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_M1__20260904_0945.svg
-QR PDF : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_M1__20260904_0945.pdf
+QR SVG : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_M1__20260904_0959.svg
+QR PDF : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_M1__20260904_0959.pdf
 
 Fichiers a uploader sur GitHub :
 - beech.jpg : 5.2 Ko
 - brushed.jpg : 19.3 Ko
-- CONTROLE_CHANTIER.txt : 1.8 Ko
+- CONTROLE_CHANTIER.txt : 1.6 Ko
 - couleur_blanc.jpg : 1.6 Ko
 - H1582.jpg : 124.9 Ko
-- index.html : 28.9 Ko
+- index.html : 28.6 Ko
 - M1__lien_3d.txt : 608 o
 - MELA_U763_ST9.jpg : 16.6 Ko
 - MELA_W1100_ST9.jpg : 16.6 Ko
 - MELA_W908_ST7.jpg : 16.6 Ko
-- modele.wrl : 20.1 Mo
+- modele.wrl : 19.6 Mo
 - Panneau-epicea.jpg : 213.3 Ko
 - STRAT_U763_ST9.jpg : 16.6 Ko
 - STRAT_W1100_ST9.jpg : 16.6 Ko
@@ -37,15 +37,9 @@ Textures referencees par le WRL et copiees :
 - MELA_W1100_ST9.jpg : 16.6 Ko
 - MELA_W908_ST7.jpg : 16.6 Ko
 - Panneau-epicea.jpg : 213.3 Ko
-- STRAT_U763_ST9.jpg : 16.6 Ko
-- STRAT_W1100_ST9.jpg : 16.6 Ko
-- STRAT_W980_ST7.jpg : 16.6 Ko
 - U617.jpg : 16.6 Ko
-- U763_A3_10DE_fur.jpg : 16.6 Ko
-- W1100.jpg : 16.6 Ko
 - beech.jpg : 5.2 Ko
 - brushed.jpg : 19.3 Ko
-- couleur_blanc.jpg : 1.6 Ko
 
 Textures referencees mais introuvables :
 - aucune
