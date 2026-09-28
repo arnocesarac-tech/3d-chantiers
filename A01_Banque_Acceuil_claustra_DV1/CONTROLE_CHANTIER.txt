@@ -1,0 +1,52 @@
+CONTROLE CHANTIER 3D
+====================
+
+Chantier : A01_Banque_Acceuil_claustra_DV1
+Date preparation : 28/09/2026 14:30
+Fichier 3D source : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\01_EXPORT_TOPSOLID_ICI\342_26PC_CREDIT_MUTEL_LAXOU\A01_Banque_Acceuil_claustra_DV1.wrl
+Taille source : 14.5 Mo
+Lien QR : https://arnocesarac-tech.github.io/3d-chantiers/A01_Banque_Acceuil_claustra_DV1/
+Page 3D : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\05_CHANTIERS_PREPARES\A01_Banque_Acceuil_claustra_DV1\index.html
+GLB : non genere
+QR SVG : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_A01_Banque_Acceuil_claustra_DV1_20260928_1430.svg
+QR PDF : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_A01_Banque_Acceuil_claustra_DV1_20260928_1430.pdf
+
+Fichiers a uploader sur GitHub :
+- A01_Banque_Acceuil_claustra_DV1_lien_3d.txt : 805 o
+- beech.jpg : 5.2 Ko
+- couleur_blanc.jpg : 1.6 Ko
+- H1298.jpg : 175.5 Ko
+- H1582.jpg : 124.9 Ko
+- H3157.jpg : 180.8 Ko
+- index.html : 26.0 Ko
+- MELA_H3157_ST12.jpg : 214.0 Ko
+- MELA_U960_ST9.jpg : 16.6 Ko
+- MELA_U963_ST9.jpg : 16.6 Ko
+- MELA_W908_ST7.jpg : 16.6 Ko
+- modele.wrl : 14.5 Mo
+- STRAT_H3157_ST12.jpg : 214.0 Ko
+- STRAT_W980_ST7.jpg : 16.6 Ko
+- U617.jpg : 16.6 Ko
+
+Textures referencees par le WRL et copiees :
+- H1298.jpg : 175.5 Ko
+- H1582.jpg : 124.9 Ko
+- H3157.jpg : 180.8 Ko
+- MELA_H3157_ST12.jpg : 214.0 Ko
+- MELA_U960_ST9.jpg : 16.6 Ko
+- MELA_U963_ST9.jpg : 16.6 Ko
+- MELA_W908_ST7.jpg : 16.6 Ko
+- STRAT_H3157_ST12.jpg : 214.0 Ko
+- STRAT_W980_ST7.jpg : 16.6 Ko
+- U617.jpg : 16.6 Ko
+- beech.jpg : 5.2 Ko
+- couleur_blanc.jpg : 1.6 Ko
+
+Textures referencees mais introuvables :
+- aucune
+
+Fichiers donnees detectes dans le dossier export :
+- aucun CSV/TXT/XML/XLS/XLSX/XLSM detecte
+
+Conclusion :
+- Preparation OK pour upload manuel GitHub.
