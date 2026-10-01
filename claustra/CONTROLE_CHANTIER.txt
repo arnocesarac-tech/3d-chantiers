@@ -1,0 +1,30 @@
+CONTROLE CHANTIER 3D
+====================
+
+Chantier : claustra
+Date preparation : 01/10/2026 10:25
+Fichier 3D source : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\01_EXPORT_TOPSOLID_ICI\lisse_claustra\claustra.wrl
+Taille source : 283.3 Ko
+Lien QR : https://arnocesarac-tech.github.io/3d-chantiers/claustra/
+Page 3D : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\05_CHANTIERS_PREPARES\claustra\index.html
+GLB : non genere
+QR SVG : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_claustra_20261001_1025.svg
+QR PDF : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_claustra_20261001_1025.pdf
+
+Fichiers a uploader sur GitHub :
+- claustra_lien_3d.txt : 632 o
+- H1298.jpg : 175.5 Ko
+- index.html : 25.4 Ko
+- modele.wrl : 283.3 Ko
+
+Textures referencees par le WRL et copiees :
+- H1298.jpg : 175.5 Ko
+
+Textures referencees mais introuvables :
+- aucune
+
+Fichiers donnees detectes dans le dossier export :
+- aucun CSV/TXT/XML/XLS/XLSX/XLSM detecte
+
+Conclusion :
+- Preparation OK pour upload manuel GitHub.
