@@ -1,0 +1,9 @@
+Chantier : implantation_-_Copie
+Modele : implantation - Copie.wrl
+Modele source : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\01_EXPORT_TOPSOLID_ICI\342_26PC_CREDIT_MUTEL_LAXOU\implantation - Copie.wrl
+Taille modele : 86.6 Mo
+Page chantier : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\05_CHANTIERS_PREPARES\implantation_-_Copie\index.html
+GLB local : non genere
+Lien 3D : https://arnocesarac-tech.github.io/3d-chantiers/implantation_-_Copie/
+QR code SVG : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_implantation_-_Copie_20261001_1021.svg
+QR code PDF : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_implantation_-_Copie_20261001_1021.pdf
