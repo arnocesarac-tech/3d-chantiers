@@ -2,19 +2,20 @@ CONTROLE CHANTIER 3D
 ====================
 
 Chantier : implantation_-_Copie
-Date preparation : 01/10/2026 10:21
+Date preparation : 01/10/2026 10:43
 Fichier 3D source : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\01_EXPORT_TOPSOLID_ICI\342_26PC_CREDIT_MUTEL_LAXOU\implantation - Copie.wrl
-Taille source : 86.6 Mo
+Taille source : 12.2 Mo
 Lien QR : https://arnocesarac-tech.github.io/3d-chantiers/implantation_-_Copie/
 Page 3D : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\05_CHANTIERS_PREPARES\implantation_-_Copie\index.html
 GLB : non genere
-QR SVG : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_implantation_-_Copie_20261001_1021.svg
-QR PDF : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_implantation_-_Copie_20261001_1021.pdf
+QR SVG : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_implantation_-_Copie_20261001_1043.svg
+QR PDF : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_implantation_-_Copie_20261001_1043.pdf
 
 Fichiers a uploader sur GitHub :
+- CONTROLE_CHANTIER.txt : 1.2 Ko
 - implantation_-_Copie_lien_3d.txt : 728 o
 - index.html : 25.4 Ko
-- modele.wrl : 86.6 Mo  ATTENTION > 25 Mo upload web
+- modele.wrl : 12.2 Mo
 
 Textures referencees par le WRL et copiees :
 - aucune
@@ -26,4 +27,4 @@ Fichiers donnees detectes dans le dossier export :
 - aucun CSV/TXT/XML/XLS/XLSX/XLSM detecte
 
 Conclusion :
-- Au moins un fichier depasse 25 Mo : l'upload par navigateur GitHub peut bloquer.
+- Preparation OK pour upload manuel GitHub.
