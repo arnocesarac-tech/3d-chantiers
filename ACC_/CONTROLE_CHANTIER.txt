@@ -1,0 +1,50 @@
+CONTROLE CHANTIER 3D
+====================
+
+Chantier : ACC_
+Date preparation : 06/10/2026 10:22
+Fichier 3D source : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\01_EXPORT_TOPSOLID_ICI\A02_Banque_accueil_DV2\ACC_.wrl
+Taille source : 23.3 Mo
+Lien QR : https://arnocesarac-tech.github.io/3d-chantiers/ACC_/
+Page 3D : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\05_CHANTIERS_PREPARES\ACC_\index.html
+GLB : non genere
+QR SVG : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_ACC__20261006_1022.svg
+QR PDF : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_ACC__20261006_1022.pdf
+
+Fichiers a uploader sur GitHub :
+- ACC__lien_3d.txt : 611 o
+- beech.jpg : 5.2 Ko
+- CONTROLE_CHANTIER.txt : 1.5 Ko
+- CP_CINTRABLE.jpg : 268.2 Ko
+- fibreb.jpg : 29.3 Ko
+- H1582.jpg : 124.9 Ko
+- index.html : 25.9 Ko
+- MELA_U963_ST9.jpg : 16.6 Ko
+- MELA_W908_ST7.jpg : 16.6 Ko
+- miroir-a-composer-l-60-x-h-70-cm-sensea-modulo.jpg : 38.2 Ko
+- modele.wrl : 23.3 Mo
+- STRAT_W980_ST7.jpg : 16.6 Ko
+- U617.jpg : 16.6 Ko
+- wood1.jpg : 3.0 Ko
+- wood194.jpg : 14.3 Ko
+
+Textures referencees par le WRL et copiees :
+- CP_CINTRABLE.jpg : 268.2 Ko
+- H1582.jpg : 124.9 Ko
+- MELA_U963_ST9.jpg : 16.6 Ko
+- MELA_W908_ST7.jpg : 16.6 Ko
+- STRAT_W980_ST7.jpg : 16.6 Ko
+- U617.jpg : 16.6 Ko
+- beech.jpg : 5.2 Ko
+- miroir-a-composer-l-60-x-h-70-cm-sensea-modulo.jpg : 38.2 Ko
+- wood1.jpg : 3.0 Ko
+- wood194.jpg : 14.3 Ko
+
+Textures referencees mais introuvables :
+- aucune
+
+Fichiers donnees detectes dans le dossier export :
+- aucun CSV/TXT/XML/XLS/XLSX/XLSM detecte
+
+Conclusion :
+- Preparation OK pour upload manuel GitHub.
