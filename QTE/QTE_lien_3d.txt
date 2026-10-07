@@ -1,7 +1,9 @@
 Chantier : QTE
 Modele : QTE.wrl
+Modele source : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\01_EXPORT_TOPSOLID_ICI\A01_Banque_Acceuil_claustra_FAB\QTE.wrl
+Taille modele : 15.3 Mo
 Page chantier : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\05_CHANTIERS_PREPARES\QTE\index.html
 GLB local : non genere
 Lien 3D : https://arnocesarac-tech.github.io/3d-chantiers/QTE/
-QR code SVG : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_QTE_20260609_1005.svg
-QR code PDF : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_QTE_20260609_1005.pdf
+QR code SVG : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_QTE_20261007_0935.svg
+QR code PDF : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_QTE_20261007_0935.pdf

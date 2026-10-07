@@ -1,0 +1,49 @@
+CONTROLE CHANTIER 3D
+====================
+
+Chantier : QTE
+Date preparation : 07/10/2026 09:35
+Fichier 3D source : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\01_EXPORT_TOPSOLID_ICI\A01_Banque_Acceuil_claustra_FAB\QTE.wrl
+Taille source : 15.3 Mo
+Lien QR : https://arnocesarac-tech.github.io/3d-chantiers/QTE/
+Page 3D : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\05_CHANTIERS_PREPARES\QTE\index.html
+GLB : non genere
+QR SVG : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_QTE_20261007_0935.svg
+QR PDF : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_QTE_20261007_0935.pdf
+
+Fichiers a uploader sur GitHub :
+- beech.jpg : 5.2 Ko
+- H1298.jpg : 175.5 Ko
+- H1582.jpg : 124.9 Ko
+- index.html : 25.8 Ko
+- MELA_H1714_ST19.jpg : 182.6 Ko
+- MELA_H3311_ST28.jpg : 267.3 Ko
+- MELA_U960_ST9.jpg : 16.6 Ko
+- MELA_U963_ST9.jpg : 16.6 Ko
+- MELA_W908_ST7.jpg : 16.6 Ko
+- MELA_W980_ST7.jpg : 16.6 Ko
+- modele.wrl : 15.3 Mo
+- QTE_lien_3d.txt : 613 o
+- S201_nougat_cream.jpg : 2.2 Ko
+- STRAT_H1714_ST19.jpg : 182.6 Ko
+- U617.jpg : 16.6 Ko
+
+Textures referencees par le WRL et copiees :
+- H1298.jpg : 175.5 Ko
+- H1582.jpg : 124.9 Ko
+- MELA_H1714_ST19.jpg : 182.6 Ko
+- MELA_U960_ST9.jpg : 16.6 Ko
+- MELA_U963_ST9.jpg : 16.6 Ko
+- MELA_W908_ST7.jpg : 16.6 Ko
+- STRAT_H1714_ST19.jpg : 182.6 Ko
+- U617.jpg : 16.6 Ko
+- beech.jpg : 5.2 Ko
+
+Textures referencees mais introuvables :
+- aucune
+
+Fichiers donnees detectes dans le dossier export :
+- aucun CSV/TXT/XML/XLS/XLSX/XLSM detecte
+
+Conclusion :
+- Preparation OK pour upload manuel GitHub.
