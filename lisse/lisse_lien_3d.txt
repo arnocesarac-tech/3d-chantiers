@@ -1,0 +1,9 @@
+Chantier : lisse
+Modele : lisse.wrl
+Modele source : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\01_EXPORT_TOPSOLID_ICI\Lisse\lisse.wrl
+Taille modele : 272.5 Ko
+Page chantier : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\05_CHANTIERS_PREPARES\lisse\index.html
+GLB local : non genere
+Lien 3D : https://arnocesarac-tech.github.io/3d-chantiers/lisse/
+QR code SVG : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_lisse_20261007_0932.svg
+QR code PDF : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_lisse_20261007_0932.pdf

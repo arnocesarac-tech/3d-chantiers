@@ -1,0 +1,30 @@
+CONTROLE CHANTIER 3D
+====================
+
+Chantier : lisse
+Date preparation : 07/10/2026 09:32
+Fichier 3D source : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\01_EXPORT_TOPSOLID_ICI\Lisse\lisse.wrl
+Taille source : 272.5 Ko
+Lien QR : https://arnocesarac-tech.github.io/3d-chantiers/lisse/
+Page 3D : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\05_CHANTIERS_PREPARES\lisse\index.html
+GLB : non genere
+QR SVG : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_lisse_20261007_0932.svg
+QR PDF : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_lisse_20261007_0932.pdf
+
+Fichiers a uploader sur GitHub :
+- H1298.jpg : 175.5 Ko
+- index.html : 25.4 Ko
+- lisse_lien_3d.txt : 602 o
+- modele.wrl : 272.5 Ko
+
+Textures referencees par le WRL et copiees :
+- H1298.jpg : 175.5 Ko
+
+Textures referencees mais introuvables :
+- aucune
+
+Fichiers donnees detectes dans le dossier export :
+- aucun CSV/TXT/XML/XLS/XLSX/XLSM detecte
+
+Conclusion :
+- Preparation OK pour upload manuel GitHub.
