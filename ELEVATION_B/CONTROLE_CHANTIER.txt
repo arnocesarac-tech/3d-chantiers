@@ -2,19 +2,19 @@ CONTROLE CHANTIER 3D
 ====================
 
 Chantier : ELEVATION_B
-Date preparation : 15/10/2026 17:14
+Date preparation : 15/10/2026 17:23
 Fichier 3D source : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\01_EXPORT_TOPSOLID_ICI\A08_HABILLAGE_MURAL_FAB\ELEVATION_B.wrl
 Taille source : 6.7 Mo
 Lien QR : https://arnocesarac-tech.github.io/3d-chantiers/ELEVATION_B/
 Page 3D : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\05_CHANTIERS_PREPARES\ELEVATION_B\index.html
 GLB : non genere
-QR SVG : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_ELEVATION_B_20261015_1714.svg
-QR PDF : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_ELEVATION_B_20261015_1714.pdf
+QR SVG : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_ELEVATION_B_20261015_1723.svg
+QR PDF : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_ELEVATION_B_20261015_1723.pdf
 
 Fichiers a uploader sur GitHub :
 - beech.jpg : 5.2 Ko
 - brushed.jpg : 19.3 Ko
-- CONTROLE_CHANTIER.txt : 1.3 Ko
+- CONTROLE_CHANTIER.txt : 1.7 Ko
 - ELEVATION_B_lien_3d.txt : 660 o
 - fibreb.jpg : 29.3 Ko
 - H1298.jpg : 175.5 Ko
