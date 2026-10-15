@@ -2,37 +2,53 @@ CONTROLE CHANTIER 3D
 ====================
 
 Chantier : ELEVATION_B
-Date preparation : 30/06/2026 14:05
-Fichier 3D source : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\01_EXPORT_TOPSOLID_ICI\226_24PC_MGN_MIT_VANDOEUVRE_A08_HABILLAGE_MURAL_DV2\ELEVATION_B.wrl
-Taille source : 3.7 Mo
+Date preparation : 15/10/2026 17:14
+Fichier 3D source : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\01_EXPORT_TOPSOLID_ICI\A08_HABILLAGE_MURAL_FAB\ELEVATION_B.wrl
+Taille source : 6.7 Mo
 Lien QR : https://arnocesarac-tech.github.io/3d-chantiers/ELEVATION_B/
 Page 3D : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\05_CHANTIERS_PREPARES\ELEVATION_B\index.html
 GLB : non genere
-QR SVG : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_ELEVATION_B_20260630_1405.svg
-QR PDF : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_ELEVATION_B_20260630_1405.pdf
+QR SVG : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_ELEVATION_B_20261015_1714.svg
+QR PDF : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_ELEVATION_B_20261015_1714.pdf
 
 Fichiers a uploader sur GitHub :
-- ELEVATION_B_lien_3d.txt : 688 o
+- beech.jpg : 5.2 Ko
+- brushed.jpg : 19.3 Ko
+- CONTROLE_CHANTIER.txt : 1.3 Ko
+- ELEVATION_B_lien_3d.txt : 660 o
+- fibreb.jpg : 29.3 Ko
 - H1298.jpg : 175.5 Ko
-- index.html : 16.3 Ko
+- H1582.jpg : 124.9 Ko
+- H3470.jpg : 189.4 Ko
+- index.html : 25.9 Ko
 - isolant.jpg : 77.1 Ko
+- MELA_U960_ST9.jpg : 16.6 Ko
 - MELA_U963_ST9.jpg : 16.6 Ko
-- modele.wrl : 3.7 Mo
+- modele.wrl : 6.7 Mo
 - RAL_7016.jpg : 4.6 Ko
+- STRAT_U963_ST9.jpg : 16.6 Ko
 - STRAT_U999_ST7.jpg : 16.6 Ko
+- wood4_col.jpg : 8.9 Ko
 
 Textures referencees par le WRL et copiees :
 - H1298.jpg : 175.5 Ko
+- H1582.jpg : 124.9 Ko
+- H3470.jpg : 189.4 Ko
+- MELA_U960_ST9.jpg : 16.6 Ko
 - MELA_U963_ST9.jpg : 16.6 Ko
 - RAL_7016.jpg : 4.6 Ko
-- STRAT_U999_ST7.jpg : 16.6 Ko
+- STRAT_U963_ST9.jpg : 16.6 Ko
+- beech.jpg : 5.2 Ko
+- brushed.jpg : 19.3 Ko
+- fibreb.jpg : 29.3 Ko
 - isolant.jpg : 77.1 Ko
+- wood4_col.jpg : 8.9 Ko
 
 Textures referencees mais introuvables :
 - aucune
 
 Fichiers donnees detectes dans le dossier export :
-- aucun CSV/TXT/XML/XLS/XLSX detecte
+- aucun CSV/TXT/XML/XLS/XLSX/XLSM detecte
 
 Conclusion :
 - Preparation OK pour upload manuel GitHub.
