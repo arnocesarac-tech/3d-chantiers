@@ -1,0 +1,52 @@
+CONTROLE CHANTIER 3D
+====================
+
+Chantier : ACC_DV3
+Date preparation : 16/10/2026 13:54
+Fichier 3D source : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\01_EXPORT_TOPSOLID_ICI\373_25RM\ACC_DV3.wrl
+Taille source : 26.5 Mo
+Lien QR : https://arnocesarac-tech.github.io/3d-chantiers/ACC_DV3/
+Page 3D : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\05_CHANTIERS_PREPARES\ACC_DV3\index.html
+GLB : non genere
+QR SVG : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_ACC_DV3_20261016_1354.svg
+QR PDF : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_ACC_DV3_20261016_1354.pdf
+
+Fichiers a uploader sur GitHub :
+- ACC_DV3_lien_3d.txt : 618 o
+- beech.jpg : 5.2 Ko
+- CP_CINTRABLE.jpg : 268.2 Ko
+- H1582.jpg : 124.9 Ko
+- index.html : 26.0 Ko
+- MELA_H3171_ST12.jpg : 239.1 Ko
+- MELA_U963_ST9.jpg : 16.6 Ko
+- MELA_W908_ST7.jpg : 16.6 Ko
+- MELA_W980_ST7.jpg : 16.6 Ko
+- miroir-a-composer-l-60-x-h-70-cm-sensea-modulo.jpg : 38.2 Ko
+- modele.wrl : 26.5 Mo  ATTENTION > 25 Mo upload web
+- STRAT_W980_ST7.jpg : 16.6 Ko
+- U617.jpg : 16.6 Ko
+- wood1.jpg : 3.0 Ko
+- wood194.jpg : 14.3 Ko
+
+Textures referencees par le WRL et copiees :
+- CP_CINTRABLE.jpg : 268.2 Ko
+- H1582.jpg : 124.9 Ko
+- MELA_H3171_ST12.jpg : 239.1 Ko
+- MELA_U963_ST9.jpg : 16.6 Ko
+- MELA_W908_ST7.jpg : 16.6 Ko
+- MELA_W980_ST7.jpg : 16.6 Ko
+- STRAT_W980_ST7.jpg : 16.6 Ko
+- U617.jpg : 16.6 Ko
+- beech.jpg : 5.2 Ko
+- miroir-a-composer-l-60-x-h-70-cm-sensea-modulo.jpg : 38.2 Ko
+- wood1.jpg : 3.0 Ko
+- wood194.jpg : 14.3 Ko
+
+Textures referencees mais introuvables :
+- aucune
+
+Fichiers donnees detectes dans le dossier export :
+- aucun CSV/TXT/XML/XLS/XLSX/XLSM detecte
+
+Conclusion :
+- Au moins un fichier depasse 25 Mo : l'upload par navigateur GitHub peut bloquer.
