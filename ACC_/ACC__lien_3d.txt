@@ -1,9 +1,9 @@
 Chantier : ACC_
 Modele : ACC_.wrl
-Modele source : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\01_EXPORT_TOPSOLID_ICI\A02_Banque_accueil_DV2\ACC_.wrl
-Taille modele : 23.3 Mo
+Modele source : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\01_EXPORT_TOPSOLID_ICI\A02_Banque_accueil_DV3\ACC_.wrl
+Taille modele : 26.5 Mo
 Page chantier : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\05_CHANTIERS_PREPARES\ACC_\index.html
 GLB local : non genere
 Lien 3D : https://arnocesarac-tech.github.io/3d-chantiers/ACC_/
-QR code SVG : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_ACC__20261006_1022.svg
-QR code PDF : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_ACC__20261006_1022.pdf
+QR code SVG : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_ACC__20261016_1349.svg
+QR code PDF : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_ACC__20261016_1349.pdf
