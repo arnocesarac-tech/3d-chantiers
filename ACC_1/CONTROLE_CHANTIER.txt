@@ -1,0 +1,34 @@
+CONTROLE CHANTIER 3D
+====================
+
+Chantier : ACC_1
+Date preparation : 22/10/2026 16:38
+Fichier 3D source : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\01_EXPORT_TOPSOLID_ICI\359_26PC_FAYAT_Quai_Lebeuf\ACC_1.wrl
+Taille source : 284.8 Ko
+Lien QR : https://arnocesarac-tech.github.io/3d-chantiers/ACC_1/
+Page 3D : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\05_CHANTIERS_PREPARES\ACC_1\index.html
+GLB : non genere
+QR SVG : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_ACC_1_20261022_1638.svg
+QR PDF : \\NASQNAP\Commun_Ecriture\MISSLER\BE\TEST_TOPSOLID_3D_QR\03_QR_CODES\QR_ACC_1_20261022_1638.pdf
+
+Fichiers a uploader sur GitHub :
+- ACC_1_lien_3d.txt : 623 o
+- index.html : 25.5 Ko
+- MELA_U504_ST9.jpg : 16.6 Ko
+- modele.wrl : 284.8 Ko
+- U617.jpg : 16.6 Ko
+- wood1.jpg : 3.0 Ko
+
+Textures referencees par le WRL et copiees :
+- MELA_U504_ST9.jpg : 16.6 Ko
+- U617.jpg : 16.6 Ko
+- wood1.jpg : 3.0 Ko
+
+Textures referencees mais introuvables :
+- aucune
+
+Fichiers donnees detectes dans le dossier export :
+- aucun CSV/TXT/XML/XLS/XLSX/XLSM detecte
+
+Conclusion :
+- Preparation OK pour upload manuel GitHub.
